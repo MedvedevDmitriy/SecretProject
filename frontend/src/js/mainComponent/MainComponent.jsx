@@ -19,7 +19,7 @@ export default class MainComponent extends PureComponent {
     handleRequest = () => {
         axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded';
         axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-        axios.get('http://localhost:8080/greeting?name=Dima')
+        axios.get('http://localhost:8080/greeting')
             .then(response => {
                 console.log(response.data);
             })
