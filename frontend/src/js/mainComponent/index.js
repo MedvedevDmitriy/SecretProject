@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Component from './MainComponent.jsx';
+import Component from '../../login/loginForm/LoginForm.jsx';
 import * as selectors from './selectors';
 import * as actions from './actions';
 

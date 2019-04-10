@@ -39,6 +39,7 @@
     "tests-cov": "nyc -e .jsx mocha --opts ./mocha.opts web/js/**/*.test.js --recursive -R nyan --silent",
     "tests": "mocha --opts ./mocha.opts src/js/**/*.test.js --recursive -R nyan --silent",
     "build": "cross-env NODE_ENV=development webpack --color --progress",
+    "build-watch": "cross-env NODE_ENV=development webpack --color --progress --watch",
     "build:prod": "cross-env NODE_ENV=production webpack --color --progress --prod",
     "start": "cross-env NODE_ENV=development webpack-dev-server --color --progress --open"
   },
